@@ -1,0 +1,56 @@
+Git Commands
+1st - right click on folder and click on "git bash here"
+
+1) $ git init 
+initializes a repository
+
+2) $ git status 
+gives you the status of the folder (repo) you're managing 
+- displays what branch you're in 
+-displays any addition/modifications in the folder
+-displays any commits
+
+
+3)$ git add "filename"
+make git track a file
+- puts file in staging area
+- git add . puts all files in staging area
+*modified has to be green after git status*
+
+4) $ git rm "filename"
+remove file from staging area (unstaging)
+
+5)$ git commit -m "comment"
+
+6)$ git log --all --oneline --decorate
+
+7) $ git branch "branch_name"
+create branch
+
+8) $ git checkout "branch_name"
+switces to an existing branch
+-HEAD points to this branch
+
+9)$ git merge "branch_name"
+
+10) $ git config --list
+
+
+
+ $ git config --global user.name "username"
+$ git config --global user.email "email"
+
+
+Connecting to github with SSH key 
+****Generate a SSH key**
+
+$ ssh-keygen -t ed25519 -C "email"
+
+***add SSH key to the ssh-agent"
+$ eval 'ssh-agent -s'
+$ ssh-add ~/.ssh/id_ed25519
+
+
+
+
+
